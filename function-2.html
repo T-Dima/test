@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Book (title, price)
+    {
+       this.title = title;
+        this.price = price;
+        // определение обьекта
+        this.show = function ()
+        {
+            document.write("название: " + this.title + "<br>");
+            document.write("Цена: " + this.price + "<br>");
+        }
+    }
+    var book = new Book("Книга", 200);
+    var book2 = new Book("Книга 2", 300);
+    book.show();
+    book2.show();
+</script>
+</body>
+</html>

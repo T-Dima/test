@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body{
+            background: #ccc;
+        }
+    </style>
+    <title>js</title>
+
+</head>
+<body>
+<h1>заголовок</h1>
+<script type=text/javascript>
+
+function Vorona(num){
+var str;
+
+    switch (num)
+    {
+        case 0:
+           str = "на ветке нет ни одной вороны";
+            break;
+        case 1:
+            str = "на ветке одна ворона";
+            break;
+        case 2:
+            str = "на ветке две вороны";
+            break;
+        case 3:
+            str = "на ветке три вороны";
+            break;
+        case 4:
+            str = "на ветке четыре вороны";
+            break;
+        case 5:
+            str = "на ветке пять ворон";
+            break;
+        case 6:
+            str = "на ветке шесть ворон";
+            break;
+        case 7:
+            str = "на ветке семь ворон";
+            break;
+        case 8:
+            str = "на ветке восемь ворон";
+            break;
+        case 9:
+            str = "на ветке девять ворон";
+            break;
+        case 10:
+            str = "на ветке десять ворон";
+            break;
+        default:
+            str = "На ветсе много ворон";
+    }
+return str;
+}
+var a = prompt("Введите число ворон:");
+a = parseInt(a);
+var s  = Vorona(a);
+
+document.write(s)
+//  document.write(str);
+
+
+</script>
+</body>
+</html>

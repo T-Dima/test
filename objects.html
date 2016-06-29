@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objects</title>
+
+</head>
+<body>
+
+<script type="text/javascript">
+//    var str1 = new String("Это строка текста" + "<br>");
+//    document.writeln(str1);
+//
+//    document.writeln("длина строки:" + str1.length + "<br>");
+//   document.writeln(str1.bold());
+//    document.write("Символ 2: " + str1.charAt(1));
+//    document.write("<br>");
+//    document.writeln(String.fromCharCode(65)); //символ от клавиатуры
+//    document.writeln("<br>");
+//
+//    document.writeln("Слово строка находиться: " + str1.indexOf("строка"));
+//    document.writeln("<br>");
+//
+//   str1 =  str1.replace("строка", "НОВАЯ СТРОКА");
+//    document.write(str1);
+//    document.writeln("<br>");
+//
+//    document.write(str1.substr(4, 8));
+//    document.writeln("<br>");
+//    document.write(str1.substring(4,8));
+//    document.writeln("<br>");
+//    document.write(str1.substring(4));
+
+
+    var n1;
+    var n2;
+    var n3;
+    var fio = prompt("укажите ваше ФИО","");
+    n1 = fio.indexOf(" ");
+    document.write(n1);
+
+    n2 = fio.lastIndexOf(" ");
+document.writeln(n2);
+    document.write(n1);
+    document.write(fio.substr(n1));
+
+</script>
+</body>
+</html>

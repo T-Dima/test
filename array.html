@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var firstArray = new Array ();
+    firstArray[0] = "red";
+    document.write(firstArray.length);
+    document.writeln("<br>");
+    var secondArray = new Array ("red", "green", "blue");
+    document.writeln(secondArray.length);
+
+    for (var i = 0; i < secondArray.length; i++)
+   document.writeln(secondArray[i]);
+    document.writeln("<br>");
+
+    document.writeln(secondArray);
+    document.writeln("<br>");
+
+    var thirdArray = new Array(5);
+    document.writeln(thirdArray);
+    document.writeln("<br>");
+    //удаление элемента
+
+    var myColors = new Array("red", "green", "blue");
+    //delete myColors [1];
+//   / document.write(myColors);
+    document.writeln("<br>");
+
+
+    var lastElements = myColors.pop();
+    document.writeln(myColors);
+    document.writeln("<br>");
+    document.writeln(lastElements);
+    document.writeln("<br>");
+
+    myColors.push("yellow");
+    document.write(myColors);
+    document.writeln("<br>");
+
+    var firstElement = myColors.shift();
+    document.write(myColors);
+    document.writeln("<br>");
+    document.write(firstElement);
+
+    document.writeln("<br>");
+    myColors.unshift("pink");
+    document.writeln(myColors);
+
+    document.writeln("<br>");
+
+   var splitted = myColors.splice(1,1);
+    document.writeln(myColors);
+    document.writeln("<br>");
+    document.writeln(splitted[0]);
+
+    document.writeln("<br>");
+
+    var s = myColors.join("~");
+    document.write(s);
+
+    document.writeln("<br>");
+
+    var str = "Саша, Маша, Петя, Даша";
+    var users = str.split(",");
+    for (var j = 0; j < users.length; j++)
+
+    document.writeln(users[j]+ "<br>");
+
+
+</script>
+</body>
+</html>
